@@ -13,18 +13,18 @@ public class StringConcat
         System.out.println("The second String is :"+ s2);
         System.out.println("The concat string is :"+ s1+s2);
 
-        //using 'concat()' operator
+        //using 'concat()' 
         System.out.println("The first String is :"+ s1);
         System.out.println("The second String is :"+ s2);
         System.out.println("The concat string is :"+ s1.concat(s2));
 
-        //using 'StringBuffer' operator
+        //using 'StringBuffer()'
         StringBuffer sb = new StringBuffer(s1);
         System.out.println("The first String is :"+ s1);
         System.out.println("The second String is :"+ s2);
         System.out.println("The concat string using StringBuffer is :"+ sb.append(s2).toString());
 
-        //using 'StringBuilder' operator
+        //using 'StringBuilder()' 
         StringBuffer sB = new StringBuffer(s1);
         System.out.println("The first String is :"+ s1);
         System.out.println("The second String is :"+ s2);
