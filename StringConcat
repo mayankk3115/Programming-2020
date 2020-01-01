@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class StringConcat
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc .next();
+        String s2 = sc.next();
+
+        //using '+' operator
+        System.out.println("The first String is :"+ s1);
+        System.out.println("The second String is :"+ s2);
+        System.out.println("The concat string is :"+ s1+s2);
+
+        //using 'concat()' operator
+        System.out.println("The first String is :"+ s1);
+        System.out.println("The second String is :"+ s2);
+        System.out.println("The concat string is :"+ s1.concat(s2));
+
+        //using 'StringBuffer' operator
+        StringBuffer sb = new StringBuffer(s1);
+        System.out.println("The first String is :"+ s1);
+        System.out.println("The second String is :"+ s2);
+        System.out.println("The concat string using StringBuffer is :"+ sb.append(s2).toString());
+
+        //using 'StringBuilder' operator
+        StringBuffer sB = new StringBuffer(s1);
+        System.out.println("The first String is :"+ s1);
+        System.out.println("The second String is :"+ s2);
+        System.out.println("The concat string using StringBuilder is :"+ sB.append(s2).toString());
+
+    }
+}
